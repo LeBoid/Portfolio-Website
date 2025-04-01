@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />
+    <link rel="stylesheet" href="css/master.css">
+    <title>Portfolio Project</title>
+</head>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<!-- jQuery (for extra interactivity) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JavaScript Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand logo-container" href="#">
+        <img src="images/GJBlogo.png" alt="Logo" class="logo">
+    </a>    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Dark mode toggle inside navbar -->
+    <button id="dark-mode-toggle" class="btn btn-outline-light ms-auto">🌙</button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm">
+        <li class="nav-item">
+          <a class="nav-link rounded-5" href="#welcome">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Header -->
+    <header id="welcome">
+        <h1 id="typing-header"></h1>
+        <p>Computer Engineering Student at the University of Oklahoma</p>
+    </header>
+
+    <section id="profile-container">
+        <img src="images/profile.jpg" alt="Your Name" id="profile-pic">
+        <h2 id="profile-name">Joseph Boidy</h2>
+        <p id="profile-title">Computer Engineering Student | Researcher Assistant</p>
+    </section>
+
+    
+    <!-- About Me Section -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>Hi! I'm Joseph, an undergraduate student studying Computer Engineering...</p>
+    </section>
+    
+    <!-- Project Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+    
+        <!-- YouTube Disinformation Research -->
+        <div class="project">
+            <h3>YouTube Disinformation Research</h3>
+            <p>
+                Research Assistant, University of Oklahoma, Norman, Oklahoma<br>
+                June 2024 - Present
+            </p>
+            <button onclick="toggleDescription('yt-research')">Click to Learn More</button>
+            <div id="yt-research" class="hidden">
+                <ul>
+                    <hr>
+                    <li>Collaborating with Dr. Cheng Samuel in the ECE department and the Data Institute for Societal Challenges to research and analyze the spread of disinformation on YouTube.</li>
+                    <li>Utilizing the YouTube Data API to collect large datasets, including metadata, comments, and video statistics, focusing on content flagged for disinformation.</li>
+                    <li>Developing and implementing Python scripts for data scraping, cleaning, and preprocessing to facilitate further analysis.</li>
+                    <li>Analyzing patterns and trends in the data to identify common characteristics of disinformation campaigns.</li>
+                    <li>Assisting in the preparation of reports and presentations summarizing research findings for academic publications and conferences.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Multiway Search Tree (M-Tree) -->
+        <div class="project">
+            <h3>Multiway Search Tree (M-Tree)</h3>
+            <p>October 2024</p>
+            <ul>
+                <li>Developed a rebuild operation for dynamic tree balancing, ensuring efficiency in large datasets.</li>
+                <li>Applied concepts of memory management and pointer-based tree structures.</li>
+                <li><a href="https://github.com/LeBoid/MTree-Project" target="_blank">GitHub Repository</a></li>
+            </ul>
+        </div>
+    </section>
+    
+
+<!-- Modal Structure
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+    </div>
+</div>
+-->
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="featured">
+        <h2>Featured</h2>
+        <div class="featured-item">
+            <img src="images/profile.jpg" alt="Profile Picture" id="profile-pic">
+            <h3>Gnamien Joseph Boidy</h3>
+            <p>Computer Engineering Student | Researcher Assistant</p>
+        </div>
+        
+        <div class="featured-item">
+            <h3>My Resume</h3>
+    <p>Click below to view or download my latest resume.</p>
+    
+    <!-- View Resume Button -->
+    <button id="viewResumeBtn">View Resume</button>
+    
+    <!-- Download Resume Button -->
+    <a id="downloadBtn" href="documents/JOSEPH Resume.pdf" download>Download</a>
+</div>
+
+<!-- Resume Modal (Hidden by Default) -->
+<div id="resumeModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <iframe src="documents/JOSEPH Resume.pdf" class="resume-iframe"></iframe>
+    </div>
+</div>
+            
+    
+        <div class="featured-item">
+            <h3>Recent Work</h3>
+            <p>Check out some of my latest projects.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+    
+    
+    <!--Scroll to Top-->
+    <button id="scrollTop">⬆ ScrollTop</button>
+
+    <footer>
+        <p class="copyright-text">© Copyright 2025 Joseph Boidy</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
